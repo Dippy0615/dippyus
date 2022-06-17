@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\sprSolid</sprite>
     <sprite>sprites\sprFont</sprite>
     <sprite>sprites\sprPowerUpGUI</sprite>
     <sprites name="Vic Viper">
@@ -25,15 +26,24 @@
       <sprite>sprites\sprFan</sprite>
       <sprite>sprites\sprNormalExplosion</sprite>
       <sprite>sprites\sprRugal</sprite>
+      <sprite>sprites\sprFose</sprite>
     </sprites>
     <sprites name="Camera">
       <sprite>sprites\sprCameraW</sprite>
       <sprite>sprites\sprCameraH</sprite>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <backgrounds name="Tiles">
+      <backgrounds name="Level 1">
+        <background>background\tilemap00</background>
+        <background>background\tilemap01</background>
+      </backgrounds>
+    </backgrounds>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
+    <object>objects\objSolid</object>
     <object>objects\objOption</object>
     <object>objects\objMissile</object>
     <object>objects\objPowerUp</object>
@@ -54,6 +64,7 @@
     <objects name="Enemies">
       <object>objects\objEnemyParent</object>
       <object>objects\objFan</object>
+      <object>objects\objFose</object>
       <object>objects\objRugal</object>
       <object>objects\objNormalExplosion</object>
     </objects>

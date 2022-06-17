@@ -33,7 +33,6 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <fonts name="fonts"/>
   <objects name="objects">
     <object>objects\objOption</object>
     <object>objects\objMissile</object>

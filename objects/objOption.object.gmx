@@ -29,7 +29,7 @@
 hsp = 0;
 vsp = 0;
 movesp = 1.5;
-image_speed = 0.3;
+image_speed = 0.22;
 powerup = 0;
 movementimer = 20;
 alarm[0] = -1;
@@ -214,9 +214,7 @@ if (objVicViper.key_fire)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(sprOption,0,x,y);
-sprite_index = sprOption;
-image_speed = 0.3;
+            <string>draw_self();
 </string>
           </argument>
         </arguments>

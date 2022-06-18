@@ -27,10 +27,41 @@
             <kind>1</kind>
             <string>global.stepcount = 0;
 global.scrollspeed = 0.7;
-global.screen_width = 256;
-global.screen_height = 224;
-window_set_size(global.screen_width*2,global.screen_height*2);
+global.section = 0;
 global.font = font_add_sprite(sprFont,33,false,0);
+
+//Songs
+global.song[0] = "musBeginning.ogg" //Beginning of the History
+global.song[1] = "musChallenger.ogg" //Challenger 1985
+
+//Song Loop Points
+global.looppoint[0] = 8.291/24.978;
+global.looppoint[1] = 0.001746/23.2061;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Update FMOD every step
+FMODUpdate();
 </string>
           </argument>
         </arguments>
@@ -53,7 +84,9 @@ global.font = font_add_sprite(sprFont,33,false,0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Global step count variable
+            <string>///Misc
+
+//Global step count variable
 global.stepcount += 1;
 //Scroll the screen
 view_xview[0] += global.scrollspeed;
@@ -167,6 +200,27 @@ switch (global.powerup)
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>FMODAllStop();
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>

@@ -3,6 +3,76 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="5" name="datafiles">
+    <datafile>
+      <name>fmodex.dll</name>
+      <exists>-1</exists>
+      <size>370688</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>fmodex.dll</filename>
+    </datafile>
+    <datafile>
+      <name>GMFMODSimple.dll</name>
+      <exists>-1</exists>
+      <size>495104</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>GMFMODSimple.dll</filename>
+    </datafile>
+    <datafile>
+      <name>musBeginning.ogg</name>
+      <exists>-1</exists>
+      <size>962478</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>musBeginning.ogg</filename>
+    </datafile>
+    <datafile>
+      <name>musChallenger.ogg</name>
+      <exists>-1</exists>
+      <size>850542</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>musChallenger.ogg</filename>
+    </datafile>
+  </datafiles>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -31,6 +101,7 @@
     <sprites name="Camera">
       <sprite>sprites\sprCameraW</sprite>
       <sprite>sprites\sprCameraH</sprite>
+      <sprite>sprites\sprSection</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -42,8 +113,39 @@
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="Sound">
+      <script>scripts\playMusic.gml</script>
+      <script>scripts\playMusicLoopPoint.gml</script>
+      <script>scripts\playMusicNoLoop.gml</script>
+      <script>scripts\playMusicNoLoopVolume.gml</script>
+      <script>scripts\playMusicVolume.gml</script>
+      <script>scripts\playMusicVolumeLoopPoint.gml</script>
+      <script>scripts\playSFX.gml</script>
+    </scripts>
+    <scripts name="FMOD">
+      <script>scripts\LoadFMOD.gml</script>
+      <script>scripts\UnloadFMOD.gml</script>
+      <script>scripts\FMODUpdate.gml</script>
+      <script>scripts\FMODInit.gml</script>
+      <script>scripts\FMODFree.gml</script>
+      <script>scripts\FMODAllStop.gml</script>
+      <script>scripts\FMODInstanceGetVolume.gml</script>
+      <script>scripts\FMODInstanceSetVolume.gml</script>
+      <script>scripts\FMODInstanceStop.gml</script>
+      <script>scripts\FMODSoundAdd.gml</script>
+      <script>scripts\FMODSoundFree.gml</script>
+      <script>scripts\FMODSoundLoop.gml</script>
+      <script>scripts\FMODSoundSetLoopPoints.gml</script>
+      <script>scripts\FMODSoundPlay.gml</script>
+      <script>scripts\FMODSoundSetMaxVolume.gml</script>
+      <script>scripts\FMODInstanceFadeVolume.gml</script>
+      <script>scripts\FMODGroupSetVolume.gml</script>
+    </scripts>
+  </scripts>
   <objects name="objects">
     <object>objects\objSolid</object>
+    <object>objects\objSection</object>
     <object>objects\objOption</object>
     <object>objects\objMissile</object>
     <object>objects\objPowerUp</object>
@@ -51,10 +153,14 @@
     <object>objects\objDouble</object>
     <object>objects\objLaser</object>
     <object>objects\objShield</object>
-    <object>objects\objGame</object>
     <object>objects\objShotParent</object>
     <object>objects\objVicViper</object>
     <object>objects\objViperExplosion</object>
+    <objects name="Control">
+      <object>objects\objGame</object>
+      <object>objects\objInit</object>
+      <object>objects\objMusic</object>
+    </objects>
     <objects name="Camera">
       <object>objects\objCameraHL</object>
       <object>objects\objCameraHR</object>
@@ -68,8 +174,12 @@
       <object>objects\objRugal</object>
       <object>objects\objNormalExplosion</object>
     </objects>
+    <objects name="FMOD">
+      <object>objects\FMODFaderObj</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rmInit</room>
     <room>rooms\room0</room>
   </rooms>
   <help>

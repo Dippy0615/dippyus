@@ -26,6 +26,17 @@
           <argument>
             <kind>1</kind>
             <string>///Variables
+if (global.checkpoint == 0)
+{
+    x = x;
+    y = y;
+}
+else
+{
+    x = global.checkpointX-128;
+    y = 112;
+}
+
 hsp = 0;
 vsp = 0;
 movesp = 1.5;
@@ -103,10 +114,10 @@ hsp = moveh * movesp;
 vsp = movev * movesp;
 
 //Stop at the borders of the camera
-if place_meeting(x+1,y,objCameraHR) &amp;&amp; (hsp &gt; 0) x = objCameraHR.x-13;
-if place_meeting(x-1,y,objCameraHL) &amp;&amp; (hsp &lt; 0) x = objCameraHL.x+13;
-if place_meeting(x,y+1,objCameraWD) &amp;&amp; (vsp &gt; 0) y = objCameraWD.y-7;
-if place_meeting(x,y-1,objCameraWU) &amp;&amp; (vsp &lt; 0) y = objCameraWU.y+7;
+if place_meeting(x+1,y,objCameraHR) &amp;&amp; (hsp &gt; 0) x = objCameraHR.x-15;
+if place_meeting(x-1,y,objCameraHL) &amp;&amp; (hsp &lt; 0) x = objCameraHL.x+15;
+if place_meeting(x,y+1,objCameraWD) &amp;&amp; (vsp &gt; 0) y = objCameraWD.y-5;
+if place_meeting(x,y-1,objCameraWU) &amp;&amp; (vsp &lt; 0) y = objCameraWU.y+5;
 
 x += global.scrollspeed + hsp;
 y += vsp;

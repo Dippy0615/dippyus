@@ -27,17 +27,9 @@
             <kind>1</kind>
             <string>global.stepcount = 0;
 global.scrollspeed = 0.7;
-global.section = 0;
-global.font = font_add_sprite(sprFont,33,false,0);
 
-//Songs
-global.song[0] = "musBeginning.ogg" //Beginning of the History
-global.song[1] = "musChallenger.ogg" //Challenger 1985
-
-//Song Loop Points
-global.looppoint[0] = 8.291/24.978;
-global.looppoint[1] = 0.001746/23.2061;
-
+if (global.checkpoint == 0) view_xview[0] = 0; 
+if (global.checkpoint &gt; 0) view_xview[0] = global.checkpointX-256;
 </string>
           </argument>
         </arguments>
@@ -120,6 +112,8 @@ draw_set_font(global.font);
 draw_text(2,0,"1P");
 draw_text(72,0,string(score));
 draw_text(120,0,"HI");
+
+draw_text(50,50,string(global.stepcount))
 
 //Powerups
 switch (global.powerup)

@@ -53,15 +53,6 @@
   <instances>
     <instance objName="objGame" x="0" y="0" name="inst_70085DE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objVicViper" x="112" y="128" name="inst_60C7AF00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCameraWU" x="0" y="0" name="inst_E9E6D8D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCameraHR" x="256" y="0" name="inst_C508D4AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCameraHL" x="0" y="0" name="inst_9467EBFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPowerUp" x="240" y="176" name="inst_4D7BEC9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPowerUp" x="288" y="80" name="inst_F2B1811E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPowerUp" x="224" y="96" name="inst_7392C344" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPowerUp" x="256" y="128" name="inst_737066EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPowerUp" x="208" y="48" name="inst_A475D944" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPowerUp" x="192" y="112" name="inst_6B2B8052" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFan" x="400" y="16" name="inst_91B2952B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFan" x="432" y="16" name="inst_154A090E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFan" x="464" y="16" name="inst_C8F01D7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -76,7 +67,6 @@
     <instance objName="objFan" x="1088" y="16" name="inst_73E93A70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFan" x="1120" y="16" name="inst_FC16EE37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFan" x="1152" y="16" name="inst_D5BFD478" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPowerUp" x="128" y="64" name="inst_3D42D3F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRugal" x="576" y="80" name="inst_0BCBF10E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRugal" x="672" y="32" name="inst_7AC7AB66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRugal" x="656" y="160" name="inst_B203AA6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -87,7 +77,6 @@
     <instance objName="objRugal" x="1664" y="64" name="inst_1EC5373D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRugal" x="1792" y="128" name="inst_FC6230C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFose" x="1008" y="176" name="inst_EE64253A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objFose" x="1072" y="96" name="inst_B5AA25E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFose" x="1184" y="48" name="inst_6405D55D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFose" x="1168" y="176" name="inst_B171DC2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFose" x="1280" y="112" name="inst_9BAA16A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -97,7 +86,6 @@
     <instance objName="objFose" x="1408" y="48" name="inst_9A0CF94A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRugal" x="944" y="48" name="inst_89AC0676" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRugal" x="1072" y="192" name="inst_6865F634" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRugal" x="1136" y="112" name="inst_B8E5176D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRugal" x="992" y="112" name="inst_DF584F97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRugal" x="1280" y="64" name="inst_2DBB0191" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRugal" x="1248" y="160" name="inst_A0BE7984" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -359,6 +347,12 @@
     <instance objName="objFose" x="2272" y="80" name="inst_70A74F8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFose" x="2304" y="168" name="inst_EB0FA5B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFose" x="1904" y="128" name="inst_61D12013" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSection" x="1160" y="0" name="inst_984D2CBF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCameraHL" x="0" y="0" name="inst_D538777E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCameraWU" x="0" y="0" name="inst_10E99A9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCameraHR" x="256" y="0" name="inst_AB0585F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCameraWD" x="0" y="224" name="inst_C661EEAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMusic" x="16" y="0" name="inst_25E861BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilemap00" x="1504" y="0" w="16" h="16" xo="0" yo="0" id="10000048" name="inst_23164235" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

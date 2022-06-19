@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,14 +26,28 @@
           <argument>
             <kind>1</kind>
             <string>///Play music using FMOD
-global.nextsong = "none";
+
+if (global.checkpoint == 0)
+{
 fading = false;
-sound = FMODSoundAdd(global.song[global.section],false,true); //Adds the song as a resource into the system
+sound = FMODSoundAdd(global.song[0],false,true); //Adds the song as a resource into the system
 FMODSoundSetMaxVolume(sound,.45); //Sets a max volume for the song directly
 instance = FMODSoundLoop(sound,false); //Makes the song loop
 FMODSoundSetLoopPoints(sound,global.looppoint[global.section],1); //Sets the loop point to the song directly
 //FMODInstanceSetVolume(instance,0.5);
 fade = FMODInstanceFadeVolume(instance, 1, 1, 1,false); //Disable fading
+}
+
+if (global.checkpoint == 1)
+{
+fading = false;
+sound = FMODSoundAdd(global.song[1],false,true); //Adds the song as a resource into the system
+FMODSoundSetMaxVolume(sound,.45); //Sets a max volume for the song directly
+instance = FMODSoundLoop(sound,false); //Makes the song loop
+FMODSoundSetLoopPoints(sound,global.looppoint[global.section],1); //Sets the loop point to the song directly
+//FMODInstanceSetVolume(instance,0.5);
+fade = FMODInstanceFadeVolume(instance, 1, 1, 1,false); //Disable fading
+}
 </string>
           </argument>
         </arguments>
@@ -57,15 +71,18 @@ fade = FMODInstanceFadeVolume(instance, 1, 1, 1,false); //Disable fading
           <argument>
             <kind>1</kind>
             <string>///Play next song
+
+if (global.nextsong == "musChallenger.ogg")
+{
 fading = false;
-global.song = global.nextsong;
-sound = FMODSoundAdd(global.song,false,true); //Adds the song as a resource into the system
+sound = FMODSoundAdd(global.song[1],false,true); //Adds the song as a resource into the system
 FMODSoundSetMaxVolume(sound,.45); //Sets a max volume for the song directly
 instance = FMODSoundLoop(sound,false); //Makes the song loop
 FMODSoundSetLoopPoints(sound,global.looppoint[global.section],1); //Sets the loop point to the song directly
 FMODInstanceSetVolume(instance,1); //Sets the volume for the song
 fade = FMODInstanceFadeVolume(instance, 1, 1, 1,false); //Disable fading
 global.nextsong = "none";
+}
 </string>
           </argument>
         </arguments>
@@ -88,9 +105,7 @@ global.nextsong = "none";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Music step event
-
-//If we are in the next section, but not playing its music
+            <string>//If we are in the next section, but not playing its music
 //Fade out and then play the next song
 
 //Fade out

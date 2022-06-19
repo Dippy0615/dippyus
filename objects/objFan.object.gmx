@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>healthpoints = 1;
-death_explosion = objNormalExplosion;
+            <string>death_explosion = objNormalExplosion;
+healthpoints = 1;
 hspeed = 0;
 vspeed = 0;
 image_speed = 0.3;
@@ -56,13 +56,13 @@ state = "FAN_MOVE1"
             <string>///AI
 if (state == "FAN_MOVE1") //Start moving
 {
-    if (x &lt; objCameraHR.x) &amp;&amp; (hspeed = 0) //Move if on screen
+    if (x &lt; objCameraHR.x) &amp;&amp; (x &gt; objCameraHL) &amp;&amp; (hspeed = 0) //Move if on screen
     {
         hspeed = -1; 
     }
     else hspeed = -1;
     
-    if (x &lt; view_xview+global.screen_width/2-25)
+    if (x &lt; view_xview+global.screen_width/2-25) &amp;&amp; (x &gt; objCameraHL)
     {
         state = "FAN_MOVE2"
     }
@@ -115,6 +115,12 @@ if (state == "FAN_MOVE3") //Retreat
 
 //Destroy if done &amp; offscreen
 if (state == "FAN_MOVE3") &amp;&amp; (x &gt; objCameraHR.x)
+{
+    instance_destroy();
+}
+
+//Destroy if it spawns to the left
+if (global.stepcount &lt; 60) &amp;&amp; (x &lt; objCameraHL.x)
 {
     instance_destroy();
 }

@@ -113,8 +113,6 @@ draw_text(2,0,"1P");
 draw_text(72,0,string(score));
 draw_text(120,0,"HI");
 
-draw_text(50,50,string(global.stepcount))
-
 //Powerups
 switch (global.powerup)
 {

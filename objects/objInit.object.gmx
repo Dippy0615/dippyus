@@ -29,6 +29,7 @@
 global.screen_width = 256;
 global.screen_height = 224;
 window_set_size(global.screen_width*2,global.screen_height*2);
+display_reset(0,true);
 global.font = font_add_sprite(sprFont,33,false,0);
 LoadFMOD();
 FMODInit(100, false);
@@ -37,6 +38,9 @@ global.checkpoint = 0;
 global.checkpointID = 0;
 global.checkpointX = 0;
 global.section = 0;
+global.credits = 00;
+lives = 3;
+global.gameover = false;
 
 //Songs
 global.song[0] = "musBeginning.ogg" //Beginning of the History

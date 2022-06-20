@@ -74,11 +74,17 @@
     </datafile>
   </datafiles>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sndCredit</sound>
+    <sound>sound\sndPlayerDie</sound>
+    <sound>sound\sndGameOver</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprSolid</sprite>
     <sprite>sprites\sprFont</sprite>
     <sprite>sprites\sprPowerUpGUI</sprite>
+    <sprite>sprites\sprLife</sprite>
+    <sprite>sprites\sprSelfSquare</sprite>
     <sprites name="Vic Viper">
       <sprite>sprites\sprDefaultShot</sprite>
       <sprite>sprites\sprVicViper</sprite>
@@ -103,6 +109,8 @@
       <sprite>sprites\sprCameraH</sprite>
       <sprite>sprites\sprSection</sprite>
     </sprites>
+    <sprite>sprites\sprTitle</sprite>
+    <sprite>sprites\sprTitleLogo</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tiles">
@@ -121,7 +129,7 @@
       <script>scripts\playMusicNoLoopVolume.gml</script>
       <script>scripts\playMusicVolume.gml</script>
       <script>scripts\playMusicVolumeLoopPoint.gml</script>
-      <script>scripts\playSFX.gml</script>
+      <script>scripts\audio_play_sound_no_overlap.gml</script>
     </scripts>
     <scripts name="FMOD">
       <script>scripts\LoadFMOD.gml</script>
@@ -145,6 +153,12 @@
     <scripts name="Enemies">
       <script>scripts\enemyDestroyIfJustSpawned.gml</script>
     </scripts>
+    <scripts name="Player">
+      <script>scripts\playerDie.gml</script>
+    </scripts>
+    <scripts name="Control">
+      <script>scripts\room_goto_transition.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\objSolid</object>
@@ -163,6 +177,8 @@
       <object>objects\objGame</object>
       <object>objects\objInit</object>
       <object>objects\objMusic</object>
+      <object>objects\objSelf</object>
+      <object>objects\objTitle</object>
     </objects>
     <objects name="Camera">
       <object>objects\objCameraHL</object>
@@ -183,7 +199,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rmInit</room>
-    <room>rooms\room0</room>
+    <room>rooms\rmSelf</room>
+    <room>rooms\rmTitle</room>
+    <room>rooms\rmGame</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

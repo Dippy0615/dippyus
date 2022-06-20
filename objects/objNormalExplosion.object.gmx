@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (irandom(6) == 1)
+            <string>if (irandom(5) == 1)
 {
     instance_create(x,y,objPowerUp);
 }

@@ -26,9 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>///Game init
+randomize();
 global.screen_width = 256;
 global.screen_height = 224;
 window_set_size(global.screen_width*2,global.screen_height*2);
+window_set_caption("Dippyus");
+if (irandom_range(1,2) == 1) window_set_caption("Dippyus: Gradius");
+else if (irandom_range(1,2) == 3) window_set_caption("Dippyus: Nemesis");
 display_reset(0,true);
 global.font = font_add_sprite(sprFont,33,false,0);
 LoadFMOD();
@@ -51,8 +55,6 @@ global.looppoint[0] = 8.291/24.978;
 global.looppoint[1] = 0.001746/23.2061;
 
 global.nextsong = "none";
-
-randomize();
 room_goto_next();
 </string>
           </argument>
